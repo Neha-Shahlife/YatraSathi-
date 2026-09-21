@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Trips · Yatra Sathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
+    <div class="sidebar-layout">
+      <div id="sidebar-slot"></div>
+      <main class="main-area">
+        <div class="between section-head">
+          <div>
+            <div class="eyebrow">Your travel catalog</div>
+            <h1 style="font-size: 38px; margin-top: 8px">
+              Travel Plans & Journeys
+            </h1>
+            <p style="margin-top: 8px">
+              Your published trips, what's coming up, journeys you joined, and
+              the requests you have sent.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="../create-plan/createPlan.html"
+            >+ Create a travel plan</a
+          >
+        </div>
+
+        <!-- Published trips -->
+        <section style="margin-top: 10px">
+          <div class="between" style="margin-bottom: 16px">
+            <h2 style="font-size: 22px">Published Trips</h2>
+            <span class="small muted" id="published-count"></span>
+          </div>
+          <div class="grid grid-3" id="published"></div>
+        </section>
+
+        <!-- Upcoming trips -->
+        <section style="margin-top: 40px">
+          <div class="between" style="margin-bottom: 16px">
+            <h2 style="font-size: 22px">Upcoming Journeys</h2>
+            <span class="small muted" id="upcoming-count"></span>
+          </div>
+          <div class="grid grid-3" id="upcoming"></div>
+        </section>
+
+        <!-- Requests I sent -->
+        <section style="margin-top: 40px">
+          <div class="between" style="margin-bottom: 16px">
+            <h2 style="font-size: 22px">Requests I Sent</h2>
+            <span class="small muted" id="sent-count"></span>
+          </div>
+          <div class="card card-pad" id="sent-requests"></div>
+        </section>
+
+        <!-- Saved wishlist -->
+        <section style="margin-top: 40px">
+          <div class="between" style="margin-bottom: 16px">
+            <h2 style="font-size: 22px">Saved Wishlist Trips</h2>
+            <span class="small muted" id="saved-count"></span>
+          </div>
+          <div class="grid grid-3" id="saved-trips"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

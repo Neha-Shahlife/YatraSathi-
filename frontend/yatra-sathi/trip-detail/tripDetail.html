@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trip Detail · Yatra Sathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
+    <div class="sidebar-layout">
+      <div id="sidebar-slot"></div>
+      <main class="main-area" id="trip-content">
+        <!-- Populated dynamically by script.js -->
+      </main>
+    </div>
+
+    <!-- Join Request Modal -->
+    <div class="modal-backdrop" id="join-modal" style="display: none">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h3 style="font-size: 20px">Request to Join Journey</h3>
+          <button
+            class="btn btn-ghost"
+            id="btn-close-join-modal"
+            style="font-size: 20px; padding: 4px 8px"
+          >
+            &times;
+          </button>
+        </div>
+        <form id="join-form">
+          <div class="modal-body stack" style="gap: 14px">
+            <div class="alert">
+              Introduce yourself to the journey host. They will review your
+              profile, travel pace, and contact you before accepting.
+            </div>
+            <div class="field">
+              <label>Number of spots requested</label>
+              <input
+                class="input"
+                type="number"
+                id="join-spots"
+                min="1"
+                max="4"
+                value="1"
+                required
+              />
+            </div>
+            <div class="field">
+              <label>Your Phone / WhatsApp Number</label>
+              <input
+                class="input"
+                id="join-phone"
+                required
+                placeholder="+977 98XXXXXXXX"
+              />
+            </div>
+            <div class="field">
+              <label>Introduction for the Organizer</label>
+              <textarea
+                class="textarea"
+                id="join-message"
+                rows="4"
+                required
+                placeholder="Tell the organizer briefly why this journey is a good fit for you..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline"
+              id="btn-cancel-join-modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary">
+              Send Join Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

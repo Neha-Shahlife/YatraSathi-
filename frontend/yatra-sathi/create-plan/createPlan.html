@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create Travel Plan · Yatra Sathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
+    <div class="sidebar-layout">
+      <div id="sidebar-slot"></div>
+      <main class="main-area">
+        <div class="between section-head">
+          <div>
+            <div class="eyebrow">Plan your journey</div>
+            <h1 style="font-size: 38px; margin-top: 8px">Create a travel plan</h1>
+            <p style="margin-top: 8px">
+              Tell people where you are going and what kind of sathi you want.
+            </p>
+          </div>
+          <a class="btn btn-outline" href="../dashboard/dashboard.html">Back to Dashboard</a>
+        </div>
+        <form id="plan-form" class="card card-pad stack">
+          <div class="grid grid-2">
+            <div class="field">
+              <label>Trip title</label
+              ><input
+                id="title"
+                class="input"
+                required
+                placeholder="Weekend escape to Pokhara"
+              />
+            </div>
+            <div class="field">
+              <label>Destination</label
+              ><select id="dest" class="select">
+                <option>Pokhara</option>
+                <option>Mustang</option>
+                <option>Annapurna</option>
+                <option>Chitwan</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Travel date</label
+              ><input id="date" class="input" type="date" required />
+            </div>
+            <div class="field">
+              <label>Duration (days)</label
+              ><input id="days" class="input" type="number" min="1" required />
+            </div>
+            <div class="field">
+              <label>Travel style</label
+              ><select id="type" class="select">
+                <option>Relaxed</option>
+                <option>Road trip</option>
+                <option>Trekking</option>
+                <option>Nature</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Open spots</label
+              ><input id="spots" class="input" type="number" min="1" required />
+            </div>
+          </div>
+          <div class="field">
+            <label>Description</label
+            ><textarea
+              id="desc"
+              class="textarea"
+              required
+              placeholder="Route, pace, budget and the kind of sathi you hope to travel with..."
+            ></textarea>
+          </div>
+          <div class="between">
+            <a class="btn btn-outline" href="../dashboard/dashboard.html"
+              >Cancel</a
+            ><button class="btn btn-primary">Publish trip</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

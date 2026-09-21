@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore Trips · Yatra Sathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
+    <div class="sidebar-layout">
+      <div id="sidebar-slot"></div>
+      <main class="main-area">
+        <div class="between section-head">
+          <div>
+            <div class="eyebrow">Find a sathi</div>
+            <h1 style="font-size: 38px; margin-top: 8px">Explore trips</h1>
+            <p style="margin-top: 8px">
+              Discover published plans by destination, date and travel style.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="../create-plan/createPlan.html"
+            >Create a plan</a
+          >
+        </div>
+        <div class="card card-pad" style="margin-bottom: 25px">
+          <div class="grid grid-4">
+            <div class="field">
+              <label>Destination</label
+              ><select id="dest" class="select">
+                <option value="">Any destination</option>
+                <option>Pokhara</option>
+                <option>Mustang</option>
+                <option>Annapurna</option>
+                <option>Chitwan</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Travel style</label
+              ><select id="type" class="select">
+                <option value="">Any style</option>
+                <option>Relaxed</option>
+                <option>Road trip</option>
+                <option>Trekking</option>
+                <option>Nature</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>From date</label
+              ><input id="date" class="input" type="date" />
+            </div>
+            <div class="field">
+              <label>&nbsp;</label
+              ><button class="btn btn-primary btn-block" id="filter">
+                Search trips
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-3" id="results"></div>
+      </main>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destinations · Yatra Sathi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/common.css" />
+</head>
+
+<body>
+  <div class="sidebar-layout">
+    <div id="sidebar-slot"></div>
+    <main class="main-area">
+      <div class="between section-head">
+        <div>
+          <div class="eyebrow">Explore Nepal</div>
+          <h1 style="font-size: 38px; margin-top: 8px">Destinations</h1>
+          <p style="margin-top: 8px">
+            Every region with travellers planning trips right now. Pick a
+            place to see who is going and when.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="../create-plan/createPlan.html">+ Create a travel plan</a>
+      </div>
+
+      <!-- Filter by province, plus a "has trips" toggle -->
+      <div class="dest-toolbar" id="dest-toolbar"></div>
+
+      <section class="card card-pad" style="margin-bottom: 20px;">
+        <h3>Add a new destination</h3>
+        <form id="add-destination-form" style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+          <select id="new-dest-name" required style="padding:8px;">
+            <option value="">-- Select place --</option>
+            <option value="kathmandu">Kathmandu</option>
+            <option value="pokhara">Pokhara</option>
+            <option value="chitwan">Chitwan</option>
+            <option value="lumbini">Lumbini</option>
+            <option value="nagarkot">Nagarkot</option>
+            <option value="everest_base_camp">Everest Base Camp</option>
+            <option value="annapurna">Annapurna Region</option>
+            <option value="bandipur">Bandipur</option>
+            <option value="ilam">Ilam</option>
+            <option value="mustang">Mustang</option>
+          </select>
+          <input type="text" id="new-dest-desc" placeholder="Short description" required style="flex:1; padding:8px;">
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+        <p id="add-dest-error" style="color:red; display:none; margin-top:8px;"></p>
+      </section>
+
+      <!-- Populated from API.listDestinations() -->
+      <div class="dest-grid" id="destination-grid"></div>
+
+      <section class="card card-pad" style="margin-top: 30px">
+        <div class="between">
+          <div>
+            <div class="eyebrow">Somewhere else in mind?</div>
+            <h3 style="margin-top: 8px">No destination of choice found?</h3>
+            <p style="margin-top: 6px">
+              Publish your own plan and let other travellers find you there.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="../create-plan/createPlan.html">+ Create a travel plan</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/store.js"></script>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

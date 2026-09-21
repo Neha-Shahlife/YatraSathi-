@@ -1,0 +1,7 @@
+# Reference backend dependencies
+Flask>=3.0
+Werkzeug>=3.0
+
+# Optional. app.py falls back to setting CORS headers itself if this is
+# not installed, so it is safe to omit.
+# flask-cors>=4.0

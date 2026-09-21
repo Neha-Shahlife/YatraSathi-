@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partner Requests · Yatra Sathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
+    <div class="sidebar-layout">
+      <div id="sidebar-slot"></div>
+      <main class="main-area">
+        <div class="section-head">
+          <div class="eyebrow">Connections</div>
+          <h1 style="font-size: 46px; margin-top: 8px">Partner requests</h1>
+          <p style="margin-top: 8px">
+            People interested in joining your journeys. Accept or reject each
+            request.
+          </p>
+        </div>
+
+        <!-- Pending: needs an Accept / Reject decision -->
+        <section>
+          <div class="between" style="margin-bottom: 14px">
+            <h2 style="font-size: 22px">Awaiting your decision</h2>
+            <span class="small muted" id="pending-count"></span>
+          </div>
+          <div class="card card-pad" id="pending-requests"></div>
+        </section>
+
+        <!-- Already decided -->
+        <section style="margin-top: 36px">
+          <div class="between" style="margin-bottom: 14px">
+            <h2 style="font-size: 22px">Decided</h2>
+            <span class="small muted" id="decided-count"></span>
+          </div>
+          <div class="card card-pad" id="decided-requests"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

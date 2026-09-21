@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yatra Sathi — Find your travel companion in Nepal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="site-header hero-transparent">
+      <div class="container header-inner">
+        <a class="brand" href="landing.html">YATRA SATHI</a>
+        <nav class="nav">
+          <a class="active" href="#hero">Home</a
+          ><a href="#destinations">Destinations</a
+          ><a href="#journeys">Find Trips</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-outline" href="../auth/login/login.html">Log In</a
+          ><a class="btn btn-primary" href="../auth/register/register.html"
+            >Join Yatra</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header id="hero" class="hero-section">
+        <div class="hero-static-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Find Your<br />Travel Partner</h1>
+          <p class="hero-subtext">
+            Connecting you with travelers heading to the same place, at the same
+            time, with the same vibe.
+          </p>
+        </div>
+      </header>
+
+      <section id="destinations" class="section destinations-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Popular Destinations</h2>
+              <p class="section-subtitle">
+                Places with the right mix of landscape, culture and open road.
+              </p>
+            </div>
+            <a href="../destinations/destination.html" class="view-all-btn"
+              >View All →</a
+            >
+          </div>
+          <div class="destinations-grid" id="destination-grid"></div>
+        </div>
+      </section>
+
+      <section id="journeys" class="section journeys-section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Featured Journeys</h2>
+              <p class="section-subtitle">
+                Real travel plans created by travelers looking for good company.
+              </p>
+            </div>
+            <a class="view-all-btn" href="../explore/explore.html"
+              >View All →</a
+            >
+          </div>
+          <div class="journeys-grid" id="featured-trips"></div>
+        </div>
+      </section>
+
+      <section class="section steps-section">
+        <div class="container">
+          <h2 class="section-title steps-title">How Yatra Sathi Works</h2>
+          <p class="steps-intro">
+            Three simple moves between wondering where to go and having someone
+            to go with.
+          </p>
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-num">01</div>
+              <h4>Post or Search</h4>
+              <p>
+                Create your upcoming travel plan or search existing itineraries
+                by destination and dates.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">02</div>
+              <h4>Send Join Request</h4>
+              <p>
+                Found a compatible companion? Send a structured join request
+                with a brief introductory note.
+              </p>
+            </article>
+            <article class="step-card">
+              <div class="step-num">03</div>
+              <h4>Connect & Travel</h4>
+              <p>
+                Once accepted, coordinate meeting details safely and embark on
+                your journey together.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-main">
+        <div class="footer-intro">
+          <a class="brand" href="landing.html">YATRA SATHI</a>
+          <p>
+            Find your travel companion across Nepal and make the journey part of
+            the story.
+          </p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h5>Discover</h5>
+            <ul>
+              <li><a href="#journeys">Find Trips</a></li>
+              <li><a href="#destinations">Destinations</a></li>
+              <li><a href="#hero">How it works</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Account</h5>
+            <ul>
+              <li><a href="../auth/login/login.html">Log In</a></li>
+              <li><a href="../auth/register/register.html">Join Yatra</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Yatra Sathi</span>
+        <span>Made for curious travelers in Nepal</span>
+      </div>
+    </footer>
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

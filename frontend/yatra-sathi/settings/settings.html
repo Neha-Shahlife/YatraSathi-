@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Settings · Yatra Sathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+  </head>
+  <body>
+    <div class="sidebar-layout">
+      <div id="sidebar-slot"></div>
+
+      <main class="main-area">
+        <div class="section-head">
+          <div class="eyebrow">Preferences</div>
+          <h1 style="font-size: 42px; margin-top: 7px">Settings</h1>
+          <p style="margin-top: 7px">
+            Manage your account preferences and security.
+          </p>
+        </div>
+
+        <!-- Account Management Section -->
+        <section
+          class="card card-pad"
+          style="margin-top: 24px; border-color: #ffebee; background: #fffbfc"
+        >
+          <div class="eyebrow" style="color: #c62828">Danger Zone</div>
+          <h2 style="font-size: 22px; margin-top: 8px; color: #d32f2f">
+            Account Management
+          </h2>
+          <p style="margin-top: 8px; font-size: 14px; color: #c62828">
+            These are irreversible actions. Please proceed with caution.
+          </p>
+
+          <div class="stack" style="gap: 12px; margin-top: 20px">
+            <!-- Deactivate Account -->
+            <div
+              class="card card-pad"
+              style="border: 1px solid #ff9800; background: #fff8f0"
+            >
+              <div class="between" style="align-items: flex-start">
+                <div>
+                  <h3
+                    style="font-size: 16px; margin-bottom: 6px; color: #e65100"
+                  >
+                    Deactivate Account
+                  </h3>
+                  <p style="font-size: 13px; color: #e65100; margin: 0">
+                    Temporarily disable your account. You can reactivate it
+                    anytime within 30 days.
+                  </p>
+                </div>
+                <button
+                  class="btn btn-outline"
+                  id="btn-deactivate"
+                  type="button"
+                  style="
+                    border-color: #ff9800;
+                    color: #ff9800;
+                    font-size: 12px;
+                    padding: 8px 14px;
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    margin-left: 16px;
+                  "
+                >
+                  Deactivate
+                </button>
+              </div>
+            </div>
+
+            <!-- Delete Account -->
+            <div
+              class="card card-pad"
+              style="border: 1px solid #d32f2f; background: #ffebee"
+            >
+              <div class="between" style="align-items: flex-start">
+                <div>
+                  <h3
+                    style="font-size: 16px; margin-bottom: 6px; color: #c62828"
+                  >
+                    Delete Account
+                  </h3>
+                  <p style="font-size: 13px; color: #c62828; margin: 0">
+                    Permanently delete your account and all associated data.
+                    This action cannot be undone.
+                  </p>
+                </div>
+                <button
+                  class="btn btn-outline"
+                  id="btn-delete-account"
+                  type="button"
+                  style="
+                    border-color: #d32f2f;
+                    color: #d32f2f;
+                    font-size: 12px;
+                    padding: 8px 14px;
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    margin-left: 16px;
+                  "
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
